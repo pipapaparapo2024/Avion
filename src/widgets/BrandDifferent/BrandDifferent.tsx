@@ -5,7 +5,7 @@ export const BrandDifferent: FC = () => {
     <>
       <div>
         <ul>
-            <li className="max-w-100 h-50 sm:bg-gray-500 flex">sdasdsdsad</li>
+          <li className="max-w-100 h-50 md:bg-gray-500 flex">sdasggggggggggdsdsad</li>
         </ul>
       </div>
     </>
