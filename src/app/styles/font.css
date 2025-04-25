@@ -1,6 +1,4 @@
-@import "tailwindcss";
 
-/* Satoshi */
 @font-face {
     font-family: 'SatoshiLight';
     src: local("SatoshiLight"),
@@ -116,7 +114,6 @@
 
 
 
-/* Clash Display */
 @font-face {
     font-family: 'ClashDisplayExtralight';
     src: local("ClashDisplayExtralight"),
@@ -193,3 +190,4 @@
     font-display: swap;
     font-style: normal;
 }
+
