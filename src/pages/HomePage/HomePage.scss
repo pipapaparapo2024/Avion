@@ -1,0 +1,17 @@
+.home-page {
+    .container {
+      min-height: 100vh; // Tailwind's min-h-screen
+  
+      .inner {
+        max-width: 1440px; // Tailwind's max-w-[1440px]
+        margin: 0 auto; // Tailwind's mx-auto
+        text-align: center; // Tailwind's text-center
+        font-size: 20px; // Tailwind's text-[20px]
+  
+        @media (min-width: 640px) {
+          padding-left: 0; // Tailwind's sm:px-0
+          padding-right: 0; // Tailwind's sm:px-0
+        }
+      }
+    }
+  }

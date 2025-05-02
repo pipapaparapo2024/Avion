@@ -1,0 +1,49 @@
+.main_div {
+  font-size: 24px;
+  margin-top: 80px;
+  max-width: 1440px;
+  margin: 0 auto; 
+  ul {
+    font-family: SatoshiRegular;
+    margin-top: 40px;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(4, minmax(300px, 1fr)); 
+    gap:20px;
+    justify-content: center; 
+    li {
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      background: #F9F9F9;
+      width: 300px; 
+      height: 240px; 
+      padding: 48px;
+      list-style: none;
+      text-align: left;
+      .title {
+        font-size: 20px;
+        margin: 12px 0;
+      }
+      .disk {
+        font-size: 16px;
+        line-height: 150%;
+      }
+    }
+  }
+}
+@media (max-width: 1270px) {
+  .main_div ul {
+    grid-template-columns: repeat(2,340px);
+    li{
+      height: 200px;
+      width: 340px;
+    }
+  }
+}
+
+@media (max-width: 740px) {
+  .main_div {
+    ul {
+      grid-template-columns: 1fr; 
+    }
+  }
+}

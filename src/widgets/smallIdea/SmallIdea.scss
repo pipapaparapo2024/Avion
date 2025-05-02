@@ -1,0 +1,54 @@
+.smallIdea{
+    display: flex;
+    max-width: 1440px;
+    margin: 0 auto;
+    background: #2A254B;
+    color: whitesmoke;
+    text-align: left;
+    .block{
+        display: block;
+        padding: 64px;
+        margin-right: 12px;
+        .label{
+            font-size: 32px;
+        }
+        .disk{
+            margin-top: 12px;
+            margin-bottom: 40px;
+            text-align: left;
+            font-size: 18px;
+            font-family: SatoshiRegular;
+            margin-bottom: 30%;
+            line-height: 140%;
+        }
+    }
+    img {
+        width: 100%; 
+        max-width: 630px; 
+        height: auto; 
+        object-fit: cover; 
+        flex-shrink: 0; 
+    }
+}
+@media (max-width:1000px){
+    .smallIdea{
+        display: inline-block;
+        max-width: 630px;
+        margin: 0px;
+        width: 100%;
+        .block{
+            padding: 36px 32px;
+            .label{
+                font-size: 20px;
+            }
+            .disk{
+                font-size: 14px;
+            }
+        }
+        img{
+            max-width: 630px;
+            width: 100%;
+        }
+    }
+
+}
