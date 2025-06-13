@@ -6,9 +6,11 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "./ListProduct.scss";
-import { ButtonViewCollection } from "../../shared/buttonViewCollection/ButtonViewCollection";
+import { ButtonAvi } from "../../shared/ui/buttonViewCollection/ButtonAvi";
+import { useNavigate } from "react-router-dom";
 export const ListProducts: FC = () => {
   const { FurnitureContainer, getFurniture } = useFurnitureStore();
+  const navigate = useNavigate();
 
   useEffect(() => {
     getFurniture();
@@ -22,8 +24,6 @@ export const ListProducts: FC = () => {
           spaceBetween={30}
           slidesPerView={1}
           loop={true}
-          // navigation
-          // pagination={{ clickable: true }}
           breakpoints={{
             390: { slidesPerView: 1 },
             500: { slidesPerView: 2 },
@@ -33,7 +33,10 @@ export const ListProducts: FC = () => {
         >
           {FurnitureContainer.map((furniture) => (
             <SwiperSlide key={furniture.id}>
-              <div className="slider_item">
+              <div 
+                className="slider_item" 
+                onClick={() => navigate(`/product/${furniture.id}`)}
+              >
                 <img src={furniture.url} alt={furniture.name} />
                 <h2>{furniture.name}</h2>
                 <p>Price: ${furniture.price}</p>
@@ -42,7 +45,7 @@ export const ListProducts: FC = () => {
           ))}
         </Swiper>
       </div>
-      <ButtonViewCollection/>
+      <ButtonAvi/>
     </div>
   );
 };

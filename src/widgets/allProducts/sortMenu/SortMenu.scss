@@ -1,0 +1,33 @@
+.all_menu {
+  .mobile_menu {
+    display: none;
+  }
+  .desktop_menu {
+    padding: 50px 2px 0 80px;
+    text-align: left;
+    .sort_type {
+      margin-bottom: 50px;
+    }
+    .sort_price {
+      margin-bottom: 50px;
+    }
+    .sort_designer {
+      margin-bottom: 50px;
+    }
+  }
+}
+
+.title {
+  margin-bottom: 20px;
+}
+
+@media (max-width: 750px) {
+  .all_menu {
+    .mobile_menu {
+      display: block;
+    }
+    .desktop_menu {
+      display: none;
+    }
+  }
+}

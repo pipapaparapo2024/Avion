@@ -2,9 +2,6 @@
     background-color: #1e3a8a; 
     color: white; 
     padding: 8px 16px;
-    border-radius: 5px;
-    margin: 10px 5px;
-  
     .content {
       display: flex;
       align-items: center;
@@ -13,7 +10,9 @@
       .icon-text {
         display: flex;
         align-items: center;
-  
+        span{
+          margin-left: 10px;
+        }
         .icon {
           font-size: 24px; 
           margin-right: 4px; 
@@ -21,6 +20,8 @@
   
         span {
           font-size: 16px; 
+          text-align: left;
+          line-height: 130%;
         }
       }
   
@@ -28,10 +29,10 @@
         font-size: 24px;
         margin-left: 12px; 
         cursor: pointer;
-        transition: transform 1s ease; 
+        transition: transform 0.2s ease; 
   
         &:hover {
-          transform: scale(1.2); 
+          transform: scale(1.4); 
         }
       }
     }

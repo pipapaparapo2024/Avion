@@ -1,7 +1,7 @@
 import { FC } from "react";
 
 import imageBlock from "../../assets/image/homePage/Image Block.png";
-import { ButtonViewCollection } from "../../shared/buttonViewCollection/ButtonViewCollection";
+import { ButtonAvi } from "../../shared/ui/buttonViewCollection/ButtonAvi";
 import "./SmallIdea.scss";
 
 export const SmallIdea: FC = () => {
@@ -13,7 +13,7 @@ export const SmallIdea: FC = () => {
           A global brand with local beginnings, our story begain in a small
           studio in South London in early 2014
         </div>
-        <ButtonViewCollection padding="16px 32px" background="#000080" color="#fff" margin="0px"/>
+        <ButtonAvi padding="16px 32px" background="#000080" color="#fff" margin="0px"/>
       </div>
       <img src={imageBlock} alt="" className="" />
     </div>

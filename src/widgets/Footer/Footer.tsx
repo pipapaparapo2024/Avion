@@ -1,5 +1,5 @@
 import { FC } from "react";
-import { InputSignUp } from "../../shared/inputSignUp/InputSignUp";
+import { InputSignUp } from "../../shared/ui/inputSignUp/InputSignUp";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
@@ -7,8 +7,11 @@ import XIcon from "@mui/icons-material/X";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import PinterestIcon from "@mui/icons-material/Pinterest";
 import "./Footer.scss";
-
+import { useNavigate } from "react-router-dom";
+import { StaticRoutes } from "../../app/app";
 export const Footer: FC = () => {
+  const navigate = useNavigate();
+
   return (
     <div className="footer">
       <div className="footer_up">
@@ -19,7 +22,19 @@ export const Footer: FC = () => {
             <li className="menu_item">Best sellers</li>
             <li className="menu_item">Recently viewed</li>
             <li className="menu_item">Popular this week</li>
-            <li className="menu_item">All products</li>
+            <li
+              onClick={() => {
+                navigate(StaticRoutes.All),
+                  window.scrollTo({
+                    top: 0,
+                    left: 0,
+                    behavior: "smooth",
+                  });
+              }}
+              className="menu_item"
+            >
+              All products
+            </li>
           </ul>
           <ul className="categories">
             Categories
@@ -32,7 +47,19 @@ export const Footer: FC = () => {
           </ul>
           <ul className="our_company">
             Our company
-            <li className="menu_item">About us</li>
+            <li
+              onClick={() => {
+                navigate(StaticRoutes.About),
+                  window.scrollTo({
+                    top: 0,
+                    left: 0,
+                    behavior: "smooth",
+                  });
+              }}
+              className="menu_item"
+            >
+              About us
+            </li>
             <li className="menu_item">Vacancies</li>
             <li className="menu_item">Contact us</li>
             <li className="menu_item">Privacy</li>
@@ -41,7 +68,11 @@ export const Footer: FC = () => {
         </div>
         <div className="join_our">
           <span>Join our mailing list</span>
-          <InputSignUp buttonBackground="#fff" buttonColor="#2A254B" inputBackground="#F5E6D3"/>
+          <InputSignUp
+            buttonBackground="#fff"
+            buttonColor="#2A254B"
+            inputBackground="#F5E6D3"
+          />
         </div>
       </div>
       <div className="footer_down">

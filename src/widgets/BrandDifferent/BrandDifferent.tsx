@@ -6,7 +6,6 @@ import CompostIcon from "@mui/icons-material/Compost";
 import "./BrandDifferent.scss";
 export const BrandDifferent: FC = () => {
   return (
-    <>
       <div className="main_div">
         <div className="main_title">What makes our brand different</div>
         <ul>
@@ -41,6 +40,5 @@ export const BrandDifferent: FC = () => {
           </li>
         </ul>
       </div>
-    </>
   );
 };

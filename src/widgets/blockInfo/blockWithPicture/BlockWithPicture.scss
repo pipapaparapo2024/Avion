@@ -1,0 +1,45 @@
+.block {
+  display: flex;
+  // margin-bottom:60px;
+  .block_info {
+    padding: 70px 100px 50px 80px;
+    text-align: left;
+    .title {
+      font-size: 24px;
+      line-height: 140%;
+      margin-bottom: 25px;
+    }
+    .disk {
+      font-family: SatoshiRegular;
+      margin-bottom: 25px;
+    }
+    .disk2 {
+      font-family: SatoshiRegular;
+      margin-bottom: 200px;
+    }
+  }
+  .block_image {
+    max-width: 100%;
+    height: auto;
+    flex-shrink: 0;
+  }
+}
+
+@media (max-width: 1100px) {
+  .block {
+    display: block;
+    align-items: center;
+
+    .block_image {
+      width: 100%;
+      margin: 0 auto;
+    }
+    .block_info {
+    padding: 50px 25px 40px 25px;
+
+      .disk2 {
+        margin-bottom: 40px;
+      }
+    }
+  }
+}

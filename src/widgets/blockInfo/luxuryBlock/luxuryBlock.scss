@@ -1,0 +1,63 @@
+
+    .img_luxury{
+      margin-bottom: 80px;
+      max-width: 1440px;
+      height: auto;
+      text-align: left;
+      position: relative;
+      .luxury_block {
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1); 
+        position: absolute;
+        background: white;
+        left: 50%; 
+        top: 15%; 
+        max-width: 630px;
+        margin-right: 80px;
+        max-height: 440px;
+        padding: 48px;
+        .label{
+          font-size: 32px;
+          line-height: 140%;
+        }
+        .disk{
+          color: #5B5676;
+          line-height: 150%;
+          margin-top: 20px;
+          font-family: SatoshiRegular;
+          margin-bottom: 10%;
+        }
+      }
+    }
+  
+  @media (max-width: 940px) {
+      .img_luxury {
+        display: flex;
+        position: static;
+        flex-direction: column; 
+        .luxury_block {
+          position: static;
+          align-self: center;
+          margin: 0;
+        }
+      }
+   }
+
+  @media (max-width:740px){
+      .img_luxury{
+        .luxury_block{
+          padding-top: 20px;
+          .label{
+            font-size: 24px;
+          }
+          .disk{
+            font-size: 16px;
+          }
+        }
+      }
+        .menu_desktop{
+          display: none;
+        }
+        .menu_mobile{
+          display: block;
+        }
+      }

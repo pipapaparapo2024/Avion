@@ -1,115 +1,142 @@
+.footer {
+  color: #ffffff;
+  background: #2a254b;
+  transition: all 0.4s ease;
+  .footer_up {
+    text-align: left;
+    padding: 60px 80px 0 80px;
+    margin-bottom: 50px;
+    gap: 100px;
+    display: flex;
+    transition: all 0.4s ease;
+    .choice_list {
+      white-space: nowrap;
+      gap: 100px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
 
-.footer{
-    color: #FFFFFF;
-    background:#2A254B ;
-    .footer_up{
-        text-align: left;
-        padding: 60px 80px 0 80px;
-        margin-bottom:50px;
-        gap: 100px;
-        display: flex;
-        .choice_list{
-            white-space: nowrap;
-            gap: 100px;
-            display: grid;
-            grid-template-columns: repeat(3, 1fr); 
-            .menu{
-                .menu_item{
-                    font-family: SatoshiRegular;
-                    font-size: 14px;
-                    margin: 12px 0px;
-                }
-            }
-            .categories{
-                .menu_item{
-                    font-family: SatoshiRegular;
-                    font-size: 14px;
-                    margin: 12px 0px;
-                }
-            }
-            .our_company{
-                .menu_item{
-                    font-family: SatoshiRegular;
-                    font-size: 14px;
-                    margin: 12px 0px;
-                }
-            }
+      .menu {
+        .menu_item {
+          font-family: SatoshiRegular;
+          font-size: 14px;
+          margin: 12px 0px;
+          cursor: pointer;
+          transition: transform 0.2s ease;
+
+          &:hover {
+            transform: scale(1.1);
+            color: rgb(228, 181, 181);
+          }
         }
-        .join_our{
-            max-width: 600px;
-            width: 100%;
-            span{
-                display: block;
-                margin-bottom: 12px;
-            }
+      }
+      .categories {
+        .menu_item {
+          font-family: SatoshiRegular;
+          font-size: 14px;
+          margin: 12px 0px;
+          cursor: pointer;
+          transition: transform 0.2s ease;
+
+          &:hover {
+            transform: scale(1.1);
+            color: rgb(228, 181, 181);
+          }
         }
+      }
+      .our_company {
+        .menu_item {
+          font-family: SatoshiRegular;
+          font-size: 14px;
+          margin: 12px 0px;
+          cursor: pointer;
+          transition: transform 0.2s ease;
+
+          &:hover {
+            transform: scale(1.1);
+            color: rgb(228, 181, 181);
+          }
+        }
+      }
     }
-    .footer_down{
-        display: flex;
-        justify-content: space-between;
-        margin: 25px 80px;
-        padding: 25px 0px;
-        border-top:2px solid #4E4D93;
-        span{
-            font-family: SatoshiRegular;
-        }
-        .icons{
-            gap: 24px;
-            display: flex;
-            .icons_item{
-                color:whitesmoke
-            }
-        }
+    .join_our {
+      max-width: 600px;
+      width: 100%;
+      span {
+        display: block;
+        margin-bottom: 12px;
+      }
     }
+  }
+  .footer_down {
+    display: flex;
+    justify-content: space-between;
+    margin: 25px 80px;
+    padding: 25px 0px;
+    border-top: 2px solid #4e4d93;
+    transition: all 0.4s ease;
+    span {
+      font-family: SatoshiRegular;
+    }
+    .icons {
+      gap: 24px;
+      display: flex;
+      .icons_item {
+        color: whitesmoke;
+        cursor: pointer;
+        transition: transform 0.2s ease;
+
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
 }
 
-
-@media (max-width:1140px){
-    .footer{
-        .footer_up{
-            display: flex;
-            flex-direction: column; 
-            gap: 20px;
-            .choice_list{
-                grid-template-columns: repeat(3, 100px); 
-            }
-        }
+@media (max-width: 1140px) {
+  .footer {
+    .footer_up {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      .choice_list {
+        grid-template-columns: repeat(3, 100px);
+      }
     }
+  }
 }
 
-@media (max-width:800px){
-    .footer{
-        .footer_down{
-            justify-content: center;
-            .icons{
-                display: none;
-            }
-        }
+@media (max-width: 800px) {
+  .footer {
+    .footer_down {
+      justify-content: center;
+
+      .icons {
+        display: none;
+      }
     }
+  }
 }
 
-@media (max-width:670px){
-    .footer{
-        .footer_up{
-            padding: 40px 25px 0px 25px;
-            margin: 0px;
-        }
+@media (max-width: 670px) {
+  .footer {
+    .footer_up {
+      padding: 40px 25px 0px 25px;
+      margin: 0px;
     }
+  }
 }
 
-
-@media (max-width:570px){
-    .footer{
-        .footer_up{
-            .choice_list{
-                grid-template-columns: repeat(2, 100px);
-                row-gap: 20px; 
-            }
-        }
-        .footer_down{
-            margin-top: 15px;
-        }
+@media (max-width: 570px) {
+  .footer {
+    .footer_up {
+      .choice_list {
+        grid-template-columns: repeat(2, 100px);
+        row-gap: 20px;
+      }
     }
+    .footer_down {
+      margin-top: 15px;
+    }
+  }
 }
-
-
