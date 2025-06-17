@@ -1,5 +1,5 @@
 import { FC } from "react";
-import { Layout } from "../../shared/Layout";
+import { Layout } from "../../shared/layout/Layout";
 import { TopBar } from "../../shared/ui/topBar/TopBar";
 import { FreeDelivery } from "../../widgets/freeDelivery/FreeDelivery";
 import { NavigationMenu } from "../../shared/ui/navigationMenu/NavigationMenu";

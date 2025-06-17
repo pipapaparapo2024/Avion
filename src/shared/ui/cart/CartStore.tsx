@@ -2,7 +2,7 @@ import { create } from "zustand";
 import { Furniture } from "../../../widgets/listProducts/ListProductsStore";
 import { useFurnitureStore } from "../../../widgets/listProducts/ListProductsStore";
 
-interface CartItem {
+export interface CartItem {
   id: number;
   url: string;
   name: string;

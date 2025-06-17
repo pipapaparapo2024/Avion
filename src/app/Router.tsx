@@ -8,6 +8,8 @@ import { ShoppingBasketPage } from "../pages/shoppingBasketPage/ShoppingBasketPa
 import "./styles/font.css";
 import "./styles/reset.css"
 import { StaticRoutes } from "./app";
+import { LoginPage } from "../pages/loginPage/LoginPage";
+import { RegisterPage } from "../pages/registerPage/RegisterPage";
 
 export const Router: FC = () => {
   return (
@@ -18,6 +20,8 @@ export const Router: FC = () => {
         <Route path={StaticRoutes.About}element={<AboutPage/>}></Route>
         <Route path={StaticRoutes.All}element={<AllProductPage/>}></Route>
         <Route path={StaticRoutes.ShopBasket}element={<ShoppingBasketPage/>}></Route>
+        <Route path={StaticRoutes.Login}element={<LoginPage/>}></Route>
+        <Route path={StaticRoutes.Register}element={<RegisterPage/>}></Route>
       </Routes>
     </div>
   );

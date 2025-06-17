@@ -2,7 +2,7 @@ import { FC, useEffect, useState } from "react";
 import "./AllProductList.scss";
 import { SortMenu } from "../sortMenu/SortMenu";
 import { useFurnitureStore } from "../../listProducts/ListProductsStore";
-
+import { useNavigate } from "react-router-dom";
 interface FilterState {
   productTypes: string[];
   designers: string[];
@@ -10,6 +10,7 @@ interface FilterState {
 }
 
 export const AllProductList: FC = () => {
+  const navigate = useNavigate();
   const { FurnitureContainer, getFurniture } = useFurnitureStore();
   const [filters, setFilters] = useState<FilterState>({
     productTypes: [],
@@ -65,7 +66,7 @@ export const AllProductList: FC = () => {
       <div className="list_product">
         {sortedProducts.length > 0 ? (
           sortedProducts.map((furniture) => (
-            <div key={furniture.id} className="list_item">
+            <div  onClick={() => navigate(`/product/${furniture.id}`)}key={furniture.id} className="list_item">
               <img
                 className="url_item"
                 src={furniture.url}

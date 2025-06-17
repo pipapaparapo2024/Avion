@@ -1,5 +1,5 @@
 import { FC } from "react";
-import { Layout } from "../../shared/Layout";
+import { Layout } from "../../shared/layout/Layout.tsx";
 import { FreeDelivery } from "../../widgets/freeDelivery/FreeDelivery";
 import { Header } from "../../widgets/header/Header";
 import { BrandDifferent } from "../../widgets/brandDifferent/BrandDifferent";

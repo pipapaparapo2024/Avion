@@ -22,7 +22,7 @@ export const TopBar: FC<TopBarProps> = ({ children }) => {
       {children}
       <div className="right_section">
         <ShoppingCartIcon onClick={()=>navigate(StaticRoutes.ShopBasket)} className="icon" />
-        <AccountBoxIcon className="icon" />
+        <AccountBoxIcon onClick={()=>navigate(StaticRoutes.Login)} className="icon" />
       </div>
     </div>
   );

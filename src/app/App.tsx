@@ -4,4 +4,6 @@ export enum StaticRoutes{
     About="/About",
     All="/AllProducts",
     ShopBasket="/ShoppingBasket",
+    Login="/Login",
+    Register="/Register"
   }

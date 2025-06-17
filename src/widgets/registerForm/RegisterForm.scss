@@ -1,0 +1,29 @@
+.register_form_container {
+  padding: 20px;
+  background-color: #f7efef;
+  width: 300px;
+  margin: 200px auto;
+  .form_buttons {
+    display: flex;
+    justify-content: space-between;
+
+    .form_button {
+      padding: 10px 30px;
+    }
+  }
+
+  .submit_button {
+    margin-top: 10px;
+    padding: 0.75rem;
+    font-weight: bold;
+    font-size: 1rem;
+    background-color: #10b981;
+    color: white;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background-color: darken(#10b981, 10%);
+      transform: scale(1.02);
+    }
+  }
+}

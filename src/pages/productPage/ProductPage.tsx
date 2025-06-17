@@ -1,5 +1,5 @@
 import { FC } from "react";
-import { Layout } from "../../shared/Layout";
+import { Layout } from "../../shared/layout/Layout";
 import { ProductCart } from "../../widgets/productCart/ProductCart";
 import { FreeDelivery } from "../../widgets/freeDelivery/FreeDelivery";
 import { TopBar } from "../../shared/ui/topBar/TopBar";
