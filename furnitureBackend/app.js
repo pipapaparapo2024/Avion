@@ -2,9 +2,9 @@ import express from 'express';
 import mongoose from 'mongoose';
 import cors from 'cors';
 import dotenv from 'dotenv';
-import authRoutes from './routes/authRoutes.js';
-import furnitureRoutes from './routes/furnitureRoutes.js';
-import errorHandler from './middleware/errorHandler.js';
+import authRoutes from './src/routes/authRoutes.js';
+import furnitureRoutes from './src/routes/furnitureRoutes.js';
+import errorHandler from './src/middleware/errorHandler.js';
 
 dotenv.config();
 
